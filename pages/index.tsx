@@ -4,7 +4,7 @@ import type {
   InferGetStaticPropsType,
   NextPage,
 } from "next";
-//import { League, Datum } from '../types'
+import { League, Datum } from '../types'
 import { useState } from "react";
 
 const imageLink =
