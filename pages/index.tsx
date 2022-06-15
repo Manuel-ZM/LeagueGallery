@@ -53,7 +53,7 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
             )
           ))}
-          <div className="scale-75 skew-y-12 w-1/2 h-full row-span-4 col-span-1 rounded bg-lime-700 overflow-hidden hover:origin-bottom-left" onClick={() => setCount(count - 1)}>
+          <div className="scale-75 skew-y-12 w-1/2 h-full row-span-4 col-span-1 rounded bg-lime-700 overflow-hidden hover:origin-bottom-left" onClick={() => setCount(count + 1)}>
             
           </div>
       </div>
