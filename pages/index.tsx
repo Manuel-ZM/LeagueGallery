@@ -33,14 +33,14 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
       <div className="grid grid-cols-7 gap-4 grid-rows-4 items-center align-middle place-items-center">
 
-      <div className="scale-75 -skew-y-12 w-1/2 h-full row-span-4 col-span-1 rounded bg-lime-700 overflow-hidden hover:origin-bottom-right" onClick={() => setCount(count - 1)}></div>
+      <div className="scale-75 -skew-y-12 w-1/2 h-full row-span-4 col-span-1 rounded bg-lime-700 border-2 border-lime-300 overflow-hidden hover:origin-bottom-right" onClick={() => setCount(count - 1)}></div>
         {
 
           personajes.map((champ, index) => (
 
             index > 0 + count && index < 6 + count && (
 
-              <div key={champ.key} className="row-span-4 col-span-1 rounded items-center align-middle overflow-hidden">
+              <div key={champ.key} className="row-span-4 col-span-1 rounded items-center align-middle border-2 border-lime-300 overflow-hidden">
 
                 <div className="relative overflow-clip text-center items-center align-middle">
                   <img className="object-fill mx-auto items-center align-middle overflow-clip hover:scale-150" src={imageLoader.concat(champ.id, "_0.jpg")}></img>
@@ -53,7 +53,7 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
             )
           ))}
-          <div className="scale-75 skew-y-12 w-1/2 h-full row-span-4 col-span-1 rounded bg-lime-700 overflow-hidden hover:origin-bottom-left" onClick={() => setCount(count + 1)}>
+          <div className="scale-75 skew-y-12 w-1/2 h-full row-span-4 col-span-1 rounded bg-lime-700 border-2 border-lime-300 overflow-hidden hover:origin-bottom-left" onClick={() => setCount(count + 1)}>
             
           </div>
       </div>
